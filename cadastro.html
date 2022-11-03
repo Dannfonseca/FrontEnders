@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Autocomplete Endereço</title>
+    <title>Cadastro</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Páginas -->
@@ -39,13 +39,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">)</span></a>
+            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only"></span></a>
             <a class="nav-item nav-link" href="produtos.html">Produtos</a>
             <a class="nav-item nav-link" href="contato.html">Contato</a>
             <a class="nav-item nav-link" href="cadastro.html">Cadastro</a>
-           
-  
-           
+            
+                     
   
           </div>
         </div>
@@ -76,6 +75,60 @@
      
      
       <form id="address-form">
+        <div class="row mb-3">
+          <div class="col-12 col-sm-6 mb-3 mb-md-0 form-floating">
+            <input
+              type="text"
+              class="form-control shadow-none"
+              id="name"
+              name="name"
+              placeholder="Nome"
+              required
+              data-input
+            />
+            <label for="address">Nome</label>
+          </div>
+          <div class="col-12 col-sm-6 form-floating">
+            <input
+              type="text"
+              class="form-control shadow-none"
+              id="lastname"
+              name="Last name"
+              placeholder="Sobrenome"
+              required
+              data-input
+            />
+            <label for="number">Sobrenome</label>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-12 col-sm-6 mb-3">
+            <select
+              class="form-select shadow-none"
+              id="sex"
+              required
+              data-input
+            >
+              <option selected>Sexo</option>
+              <option value="Masc">Masculino</option>
+              <option value="Fem">Feminino</option>
+              <option value="NB">Não binário</option>
+              <option value="Pref">Prefiro não responder</option>              
+            </select>
+          </div>
+          <div class="col-12 col-sm-6 form-floating">
+            <input
+              type="text"
+              class="form-control shadow-none"
+              id="lastname"
+              name="Last name"
+              placeholder="naturalidade"
+              required
+              data-input
+            />
+            <label for="number">Naturalidade</label>
+          </div>
+        </div>
         <div class="row mb-3">
           <div class="form-floating">
             <input
@@ -199,6 +252,44 @@
             </select>
           </div>
         </div>
+        <div class="row mb-3">
+          <div class="col-8 col-sm-6 mb-3 mb-md-0 form-floating">
+            <input
+              type="email"
+              class="form-control shadow-none"
+              id="user"
+              name="user"
+              placeholder="Usuário"
+              required
+              data-input
+            />
+            <label for="address">Usuário</label>
+          </div>
+          <div class="col-8 col-sm-3 form-floating">
+            <input
+              type="password"
+              class="form-control shadow-none"
+              id="passw"
+              name="Last name"
+              placeholder="Senha"
+              required
+              data-input
+            />
+            <label for="number">Senha</label>
+          </div>
+          <div class="col-8 col-sm-3 form-floating">
+            <input
+              type="password"
+              class="form-control shadow-none"
+              id="passw"
+              name="Last name"
+              placeholder="Senha"
+              required
+              data-input
+            />
+            <label for="number">Repetir senha</label>
+          </div>
+        </div>
         <div class="d-flex justify-content-end">
           <button id="save-btn" type="submit" class="btn btn-primary">
             Cadastrar
@@ -212,5 +303,67 @@
 
 
     </div>
+
+    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Título do modal</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">   
+            <form id="contact-form" action="mailto: russelmytho@gmail.com" method="POST" enctype="multipart/form-data">
+              <div class="row">
+                  <div class="col-md-6">
+                      <label for="Email" class="form-label">Nome</label>
+                      <input type="text" class="form-control">
+                  </div>
+              
+                  <div class="col-md-6">
+                      <label for="Email" class="form-label">Sobrenome</label>
+                      <input type="text" class="form-control">
+                  </div>
+
+                  <div class="col-md-12">
+                      <label for="Email" class="form-label">Endereço de Email</label>
+                      <input type="email" class="form-control">
+                  </div>
+              
+                  <div class="col-md-12">
+                      <label for="Email" class="form-label">Senha</label>
+                      <input type="password" class="form-control">
+                  </div>
+              
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary" >Enviar</button>
+              </form>                      
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary">Salvar mudanças</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+     
+
+
+  
+  <script>
+    var modal = new bootstrap.Modal(document.getElementById('modal'),{
+        keyboard: false
+    })
+    modal.show();
+
+
+    
+</script>
+  
+
   </body>
 </html>
