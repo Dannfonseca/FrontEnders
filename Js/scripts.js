@@ -130,3 +130,7 @@ addressForm.addEventListener("submit", (e) => {
   }, 1000);
 });
 
+var modal = new bootstrap.Modal(document.getElementById('modal'),{
+  keyboard: false
+})
+modal.show();

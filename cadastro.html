@@ -44,11 +44,14 @@
             <a class="nav-item nav-link" href="contato.html">Contato</a>
             <a class="nav-item nav-link" href="cadastro.html">Cadastro</a>
             
-                     
+            
+           
   
           </div>
         </div>
       </nav>
+
+      
 
     <div id="fade" class="hide">
       <div id="loader" class="spinner-border text-info hide" role="status">
@@ -113,7 +116,10 @@
               <option value="Masc">Masculino</option>
               <option value="Fem">Feminino</option>
               <option value="NB">Não binário</option>
-              <option value="Pref">Prefiro não responder</option>              
+              <option value="Pref">Transgênero</option>
+              <option value="Masc">Gênero neutro</option>
+              <option value="Fem">Agênero</option>
+              <option value="Pref">Prefiro não responder</option>                 
             </select>
           </div>
           <div class="col-12 col-sm-6 form-floating">
@@ -127,6 +133,33 @@
               data-input
             />
             <label for="number">Naturalidade</label>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-12 col-sm-6 mb-3 mb-md-0 form-floating">
+            <input
+              type="text"
+              class="form-control shadow-none"
+              id="CPF"
+              name="Cpf"
+              placeholder="CPF"              
+              maxlength="11"
+              minlength="11"
+              required
+            />
+            <label for="address">CPF</label>
+          </div>
+          <div class="col-12 col-sm-6 form-floating">
+            <input
+              type="date"
+              class="form-control shadow-none"
+              id="birthdate"
+              name="birthdate"
+              placeholder="Data de Nascimento"
+              required
+              data-input
+            />
+            <label for="number">Data de nascimento</label>
           </div>
         </div>
         <div class="row mb-3">
@@ -350,19 +383,11 @@
       </div>
 
 
-     
+      
 
-
+      
   
-  <script>
-    var modal = new bootstrap.Modal(document.getElementById('modal'),{
-        keyboard: false
-    })
-    modal.show();
-
-
-    
-</script>
+      
   
 
   </body>
