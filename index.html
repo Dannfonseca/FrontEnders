@@ -1,58 +1,202 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- Páginas -->
-    <link rel="stylesheet" href="cadastro.html">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Páginas -->
+  <link rel="stylesheet" href="cadastro.html" />
 
-    <link rel="stylesheet" href="contato.html">
+  <link rel="stylesheet" href="contato.html" />
 
-    <link rel="stylesheet" href="produtos.html">
+  <link rel="stylesheet" href="produtos.html" />
 
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstrap icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
-    />
-    <script src="js/scripts.js" defer></script>
-  </head>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous" />
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+  <script src="js/scripts.js" defer></script>
+</head>
 
+<body background='img/droneback.jpg'>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">FrontEnders</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Home
+          <span class="sr-only"></span>
+        </a>
+        <a class="nav-item nav-link" href="produtos.html">Produtos</a>
+        <a class="nav-item nav-link" href="contato.html">Contato</a>
+        <a class="nav-item nav-link" href="cadastro.html">Cadastro</a>
 
-  <body id>
-    <!-- Menu -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">FrontEnders</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
+        <!-- Botão para acionar modal -->
+        <button type="button" id="bota1" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+          Login
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only"></span></a>
-            <a class="nav-item nav-link" href="produtos.html">Produtos</a>
-            <a class="nav-item nav-link" href="contato.html">Contato</a>
-            <a class="nav-item nav-link" href="cadastro.html">Cadastro</a>
-           
-  
-           
-  
-          </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-    </nav>
+        <div class="modal-body">
+          <form id="contact-form" action="mailto: russelmytho@gmail.com" method="POST" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-md-12">
+                <label for="Email" class="form-label">Endereço de Email</label>
+                <input type="email" class="form-control" />
+              </div>
 
-   <p>Página principal</p>
+              <div class="col-md-6">
+                <label for="Email" class="form-label">Senha</label>
+                <input type="password" class="form-control" />
+              </div>
 
-  </body>
+              <div class="col-md-6">
+                <label for="Email" class="form-label">Confirmar senha</label>
+                <input type="password" class="form-control" />
+              </div>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Fechar
+          </button>
+          <a href="recupera.html">
+            <button style="background: #069cc2; border-radius: 6px; padding: 7.5px; cursor: pointer; color: #fff; border: none; font-size: 16px;">Não consegue conectar?</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="drone1">
+    <div id="texto">
+      <p>Na FrontEnders, fornecemos drones a preço acessíveis e de alta qualidade, que podem fazer imagens aéreas, para que
+        nossos clientes possam apresentar seus produtos
+        <br> em todas as plataformas de vídeo e fotos, além de também ser muito útil para a sociedade, como, por exemplo, em
+        resgates em áreas de difícil acesso.</p>
+    </div>
+    <div id="botaoproduto">
+      <a href="produtos.html" id="botaoindex">
+        <button style="background: #39b2d3; border-radius: 6px; padding: 7.5px; cursor: pointer; color: #fff; border: none; font-size: 16px;">Veja nossos produtos</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="divdrone">
+    <div class="card" style="width: 18rem;" id="exemplodrone">
+      <img src="img/dronep1.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Drone Max</h5>
+        <p class="card-text">Feitos para suportar pesos maiores, ou seja, é ideal para as pessoas que desejam trabalhar com entregas de produtos
+          de até 100kg.</p>
+        <a href="produtos.html" class="btn btn-primary">Confira nossos produtos</a>
+      </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;" id="exemplodrone1">
+      <img src="img/dronep2.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Drone Speed</h5>
+        <p class="card-text">Estes drones são equipados com um pequeno cofre eletrônico de aproximadamente 30x30cm, abertos somente ao chegar
+          ao local de entrega com uma senha previamente estabelecida. São ideais para encomendas de pequeno porte, como cartas
+          ou documentos que precisam ser entregues urgentemente ao destinatário.</p>
+        <a href="produtos.html" class="btn btn-primary">Confira nossos produtos</a>
+      </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;" id="exemplodrone2">
+      <img src="img/dronep3.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Drone CAM </h5>
+        <p class="card-text">Estes drones são equipado com uma câmera de tecnologia 4k, sensor de movimento, sensor de calor e luz noturna e capacidade
+          de gravação de até 5TB. Estes drones são Ideais para desde ajudar em buscas e salvamento de pessoas perdidas ou
+          presas em algum lugar que seja difícil alguém ir até a filmar seus eventos em local aberto e pode ser usado até
+          debaixo d'água!</p>
+        <a href="produtos.html" class="btn btn-primary">Confira nossos produtos</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer>
+ 
+
+
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <img src="./img/facebook.svg">
+        <p></p>
+      </a>
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <img src="./img/whatsapp.svg">
+        <p></p>
+      </a>
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <img src="./img/linkedin.svg">
+        <p></p>
+      </a>
+   
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

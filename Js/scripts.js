@@ -5,6 +5,7 @@ const cityInput = document.querySelector("#city");
 const neighborhoodInput = document.querySelector("#neighborhood");
 const regionInput = document.querySelector("#region");
 const formInputs = document.querySelectorAll("[data-input]");
+const $buscar = document.querySelector(".buscar");
 
 const closeButton = document.querySelector("#close-message");
 
@@ -25,8 +26,8 @@ cepInput.addEventListener("keypress", (e) => {
 });
 
 // Evento to get address
-cepInput.addEventListener("keyup", (e) => {
-  const inputValue = e.target.value;
+$buscar.addEventListener("click", (e) => {
+  const inputValue = document.getElementById("cep").value;
 
   //   Check if we have a CEP
   if (inputValue.length === 8) {
@@ -130,7 +131,4 @@ addressForm.addEventListener("submit", (e) => {
   }, 1000);
 });
 
-var modal = new bootstrap.Modal(document.getElementById('modal'),{
-  keyboard: false
-})
-modal.show();
+
