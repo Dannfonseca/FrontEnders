@@ -5,7 +5,7 @@ const cityInput = document.querySelector("#city");
 const neighborhoodInput = document.querySelector("#neighborhood");
 const regionInput = document.querySelector("#region");
 const formInputs = document.querySelectorAll("[data-input]");
-const $buscar = document.querySelector(".buscar");
+const $buscar = document.querySelector(".botao_buscar");
 
 const closeButton = document.querySelector("#close-message");
 
