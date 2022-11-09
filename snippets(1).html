@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>navbar</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<style>
+	*{
+		font-family: 'Poppins', sans-serif !important;
+		    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+	}
+
+	/*searchbox*/
+
+		.custom_search{
+			color: #FFF !important;
+			background: transparent;
+			border: 0;
+			border-radius: 0;
+			border-bottom: 2px solid #FFF;
+			width: 240px !important;
+		}
+		.custom_search:focus{
+			box-shadow: none;
+			background: transparent;
+			border-bottom:2px solid #FFF;
+		}
+		.custom_search + .search_span{
+			position: absolute;
+			bottom: 0;
+			width: 0;
+			left: 50%;
+			transition: width 0.5s, left 0.5s;
+		}
+		.custom_search:focus + .search_span{
+			width: 240px;
+			left: 0;
+			border-bottom: 2px solid #c128ea;			
+		}
+		.custom_search::placeholder{
+			color: #FFF !important;
+		}
+
+		.search_button{
+			background: #8e24aa;
+			width: 100px;
+			border: 0;
+		}
+		.search_button:focus{
+			border: 0;
+			box-shadow: none;
+		}
+		.search_button:active{
+			background: #8e24aa !important;
+			box-shadow: none !important;
+		}
+
+		.search_button:hover{
+			background: #8e24aa;
+		}
+
+/*ripple effect*/
+
+		.tx--white {
+  			color: #fff;
+		}
+
+[ripple] {
+  position: relative;
+  overflow: hidden;
+}
+[ripple] .ripple--container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+[ripple] .ripple--container span {
+  transform: scale(0);
+  border-radius: 100%;
+  position: absolute;
+  opacity: 0.30;
+  background-color: #fff;
+  animation: ripple 1000ms;
+}
+@-moz-keyframes ripple {
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+@-webkit-keyframes ripple {
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+@-o-keyframes ripple {
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+@keyframes ripple {
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+/*navbar*/
+
+.navbar{
+	background: #222 !important;
+	line-height: 2rem !important;	
+}
+
+.navbar .navbar-brand{
+	color: #FFF !important;
+}
+
+.navbar-nav .active a{
+	color: #c128ea !important;
+}
+
+.navbar-nav .nav-item .nav-link{
+	color: #FFF;
+}
+
+.dropdown-menu {
+	background: #22221E;
+}
+.dropdown-menu .dropdown-item{
+	color: #FFF;
+	transition: all 0.2s;
+}
+
+.dropdown-menu .dropdown-item:hover{
+	background: #8e24aa;
+	color: #FFF;
+}
+
+.navbar-toggler-icon{
+	color: #FFF !important;
+}
+
+.navbar-dark .navbar-toggler{
+	border-color: #FFFFFF !important;
+}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="justify-content: space-around;">
+  <a class="navbar-brand" href="#">Frontenders</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">produtos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contatos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Cadastro</a>
+      </li>
+      <button type="button" class="btn btn-primary">Login</button>
+    </ul>  
+  </div>
+</nav>
+<section style="background-color: rgb(47, 27, 53);">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="card">
+            <img src="img/norm_12_dji-drone-mavic-3-fly-more-combo.jpg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Drone</a></p>
+                <p class="small text-danger"><s>R$ 6800</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Drone Max</h5>
+                <h5 class="text-dark mb-0">R$7524</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">6</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <img src="img/norm_1_dji-avata-proview-combo-dji-goggles-2.jpg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Drone</a></p>
+                <p class="small text-danger"><s>$1199</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Drone Cam</h5>
+                <h5 class="text-dark mb-0">R$5999</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">7</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <img src="img/norm_1_dji-drone-mini-2-fly-more-combo.jpg"
+              class="card-img-top" alt="Gaming Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Drone</a></p>
+                <p class="small text-danger"><s>$1399</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Drone Speed</h5>
+                <h5 class="text-dark mb-0">R$1299</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">5</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+            <div class="card">
+              <img src="img/norm_1_dji-drone-tello-boost-combo.jpg"
+                class="card-img-top" alt="Gaming Laptop" />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <p class="small"><a href="#!" class="text-muted">Drone</a></p>
+                  <p class="small text-danger"><s>$1399</s></p>
+                </div>
+    
+                <div class="d-flex justify-content-between mb-3">
+                  <h5 class="mb-0">Drone marvel</h5>
+                  <h5 class="text-dark mb-0">R$499</h5>
+                </div>
+    
+                <div class="d-flex justify-content-between mb-2">
+                  <p class="text-muted mb-0">Available: <span class="fw-bold">5</span></p>
+                  <div class="ms-auto text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+            <div class="card">
+              <img src="img/norm_4_dji-drone-air-2s-fly-more-combo.jpg"
+                class="card-img-top" alt="Gaming Laptop" />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <p class="small"><a href="#!" class="text-muted">Drone</a></p>
+                  <p class="small text-danger"><s>$1399</s></p>
+                </div>
+    
+                <div class="d-flex justify-content-between mb-3">
+                  <h5 class="mb-0">Drone Over</h5>
+                  <h5 class="text-dark mb-0">$1299</h5>
+                </div>
+    
+                <div class="d-flex justify-content-between mb-2">
+                  <p class="text-muted mb-0">Available: <span class="fw-bold">5</span></p>
+                  <div class="ms-auto text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+            <div class="card">
+              <img src="img/norm_5_dji-drone-mini-se-fly-more-combo.jpg"
+                class="card-img-top" alt="Gaming Laptop" />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <p class="small"><a href="#!" class="text-muted">Drone</a></p>
+                  <p class="small text-danger"><s>$1399</s></p>
+                </div>
+    
+                <div class="d-flex justify-content-between mb-3">
+                  <h5 class="mb-0">Drone Stranger</h5>
+                  <h5 class="text-dark mb-0">$1299</h5>
+                </div>
+    
+                <div class="d-flex justify-content-between mb-2">
+                  <p class="text-muted mb-0">Available: <span class="fw-bold">5</span></p>
+                  <div class="ms-auto text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+            
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <script src="script.js">
+  </script>
+  
+  </html>
