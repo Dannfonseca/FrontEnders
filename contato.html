@@ -1,62 +1,233 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Páginas -->
+  <link rel="stylesheet" href="cadastro.html" />
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="contato.html" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <!-- Páginas -->
-    <link rel="stylesheet" type="text/css" href="produtos.html"/>
-    
-    <link rel="stylesheet" type="text/css" href="contato.html"/>
-    
-    <link rel="stylesheet" type="text/css" href="index.html"/>
-    
-    
+  <link rel="stylesheet" href="produtos.html" />
 
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous" />
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+  <script src="js/scripts.js" defer></script>
 </head>
 
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">FrontEnders</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Home
+          <span class="sr-only"></span>
+        </a>
+        <a class="nav-item nav-link" href="produtos.html">Produtos</a>
+        <a class="nav-item nav-link" href="contato.html">Contato</a>
+        <a class="nav-item nav-link" href="cadastro.html">Cadastro</a>
 
-<body>              
-    
-    <!-- MENU PRINCIPAL -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">FrontEnders</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
+        <!-- Botão para acionar modal -->
+        <button type="button" id="bota1" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+          Login
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only"></span></a>
-            <a class="nav-item nav-link" href="produtos.html">Produtos</a>
-            <a class="nav-item nav-link" href="contato.html">Contato</a>
-            <a class="nav-item nav-link" href="cadastro.html">Cadastro</a>
-           
-           
-  
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="contact-form" action="mailto: russelmytho@gmail.com" method="POST" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-md-12">
+                <label for="Email" class="form-label">Endereço de Email</label>
+                <input type="email" class="form-control" />
+              </div>
+
+              <div class="col-md-6">
+                <label for="Email" class="form-label">Senha</label>
+                <input type="password" class="form-control" />
+              </div>
+
+              <div class="col-md-6">
+                <label for="Email" class="form-label">Confirmar senha</label>
+                <input type="password" class="form-control" />
+              </div>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Fechar
+          </button>
+          <a href="recupera.html">
+            <button style="background: #069cc2; border-radius: 6px; padding: 7.5px; cursor: pointer; color: #fff; border: none; font-size: 16px;">Não consegue conectar?</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>Página de contato</p>
+  </div>
+  </div>
+
+  <div class="todososcards">
+    <div class="container1">
+      <div class="card1">
+        <div class="imagen1">
+          <img class="mar1" src="img/1a9e5e3b-0382-4efc-ba9a-fc12b2a7d599.jfif" alt="mar.png1">
+        </div>
+        <div class="texto1">
+          <h2 class="text-main1"> ÍRIS MACHADO </h2>
+          <p class="desc1"> GESTORA DE GENTE E ENGAJAMENTO </p>
+          <div>
+            <a href="https://wa.me/5521980554270">
+              <button tybe="button2" class="btn2">
+                <img src="img/whatsapp.png" alt="foto2" class="foto3">
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/irismachadoteixeira/">
+              <button tybe="button3" class="btn3">
+                <img src="img/linkedin.png" alt="foto3" class="foto4">
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container2">
+      <div class="card2">
+        <div class="imagen2">
+          <img class="mar2" src="img/e4a7012f-74fb-4b71-98e1-9010ce53c1df.jfif" alt="mar.png1">
+        </div>
+        <div class="texto2">
+          <h2 class="text-main2"> GABRIEL COSTA </h2>
+          <p class="desc2">COLABORADOR I</p>
+          <div>
+            <a href="https://wa.me/5521992311828">
+              <button tybe="button4" class="btn4">
+                <img src="img/whatsapp.png" alt="foto5" class="foto5">
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/gabriel-costa-ferreira-813364221/">
+              <button tybe="button5" class="btn5">
+                <img src="img/linkedin.png" alt="foto6" class="foto6">
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container3">
+      <div class="card3">
+        <div class="imagen3">
+          <img class="mar3" src="img/88fd26d9-13e1-410a-aef9-325729a95a72.jfif" alt="mar.png1">
+        </div>
+        <div class="texto3">
+          <h2 class="text-main3"> DANIEL NASCIMENTO </h2>
+          <p class="desc3">CO-FACILITADOR</p>
+          <div>
+            <a href="https://wa.me/5521989324855">
+              <button tybe="button6" class="btn6">
+                <img src="img/whatsapp.png" alt="foto7" class="foto7">
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/daniel-nascimento-fonseca-a1885b20b/">
+              <button tybe="button7" class="btn7">
+                <img src="img/linkedin.png" alt="foto8" class="foto8">
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    
+      <div class="card4">
+        <div class="imagen4">
+          <img class="mar4" src="img/d090bc16-9bf0-47e4-ab3d-f6741d4dc91f.jfif" alt="mar.png1">
+        </div>
+        <div class="texto4">
+          <h2 class="text-main4"> LARISSA ABRAHÃO </h2>
+          <p class="desc4">GESTORA DE CONHECIMENTO</p>
+          <div>
+            <a href="https://wa.me/5521979009506">
+              <button tybe="button8" class="btn8">
+                <img src="img/whatsapp.png" alt="foto9" class="foto9">
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/larissaabrahao/">
+              <button tybe="button9" class="btn9">
+                <img src="img/linkedin.png" alt="foto10" class="foto10">
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="container01">
+        <div class="card01">
+          <div class="imagen01">
+            <img class="mar01" src="img/ef53170b-0363-4223-b743-26d929ed8257.jfif" alt="mar.png">
+          </div>
+          <div class="texto01">
+            <h2 class="text-main01"> MARCUS GIL </h2>
+            <p class="desc01">COLABORADOR II</p>
+            <div>
+              <a href="https://wa.me/5521987198688">
+                <button tybe="button01" class="btn01">
+                  <img src="img/whatsapp.png" alt="foto01" class="foto01">
+                </button>
+              </a>
+              <a href="">
+                <button tybe="button02" class="btn02">
+                  <img src="img/linkedin.png" alt="foto02" class="foto02">
+                </button>
+              </a>
+            </div>
+
           </div>
         </div>
-      </nav>
-         <!-- MENU PRINCIPAL -->
-    
- 
-    <p>Página de contatos</p>
 
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
 
-    
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
-
-    
-</body>    
 </html>
