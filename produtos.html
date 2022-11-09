@@ -1,155 +1,222 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produtos</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- Páginas -->
-    <link rel="stylesheet" href="cadastro.html" />
 
-    <link rel="stylesheet" href="contato.html" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produtos</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Páginas -->
+  <link rel="stylesheet" href="cadastro.html" />
 
-    <link rel="stylesheet" href="produtos.html" />
+  <link rel="stylesheet" href="contato.html" />
 
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstrap icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
-    />
-    <script src="js/scripts.js" defer></script>
-  </head>
+  <link rel="stylesheet" href="produtos.html" />
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">FrontEnders</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Alterna navegação"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html"
-            >Home <span class="sr-only"></span
-          ></a>
-          <a class="nav-item nav-link" href="produtos.html">Produtos</a>
-          <a class="nav-item nav-link" href="contato.html">Contato</a>
-          <a class="nav-item nav-link" href="cadastro.html">Cadastro</a>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+  <script src="js/scripts.js" defer></script>
+</head>
 
-          <!-- Botão para acionar modal -->
-          <button
-            type="button"
-            id="bota1"
-            class="btn btn-primary"
-            data-toggle="modal"
-            data-target="#ExemploModalCentralizado"
-          >
-            Login
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">FrontEnders</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only"></span></a>
+        <a class="nav-item nav-link" href="produtos.html">Produtos</a>
+        <a class="nav-item nav-link" href="contato.html">Contato</a>
+        <a class="nav-item nav-link" href="cadastro.html">Cadastro</a>
+
+        <!-- Botão para acionar modal -->
+        <button type="button" id="bota1" class="btn btn-primary" data-toggle="modal"
+          data-target="#ExemploModalCentralizado">
+          Login
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+    aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
           </button>
         </div>
-      </div>
-    </nav>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="ExemploModalCentralizado"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="TituloModalCentralizado"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="TituloModalCentralizado">Login</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Fechar"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form
-              id="contact-form"
-              action="mailto: russelmytho@gmail.com"
-              method="POST"
-              enctype="multipart/form-data"
-            >
-              <div class="row">
-                <div class="col-md-12">
-                  <label for="Email" class="form-label"
-                    >Endereço de Email</label
-                  >
-                  <input type="email" class="form-control" />
-                </div>
-
-                <div class="col-md-6">
-                  <label for="Email" class="form-label">Senha</label>
-                  <input type="password" class="form-control" />
-                </div>
-
-                <div class="col-md-6">
-                  <label for="Email" class="form-label">Confirmar senha</label>
-                  <input type="password" class="form-control" />
-                </div>
+        <div class="modal-body">
+          <form id="contact-form" action="mailto: russelmytho@gmail.com" method="POST" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-md-12">
+                <label for="Email" class="form-label">Endereço de Email</label>
+                <input type="email" class="form-control" />
               </div>
-              <br />
-              <button type="submit" class="btn btn-primary">Login</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Fechar
-            </button>
-            <a href="recupera.html"><button
+
+              <div class="col-md-6">
+                <label for="Email" class="form-label">Senha</label>
+                <input type="password" class="form-control" />
+              </div>
+
+              <div class="col-md-6">
+                <label for="Email" class="form-label">Confirmar senha</label>
+                <input type="password" class="form-control" />
+              </div>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Fechar
+          </button>
+          <a href="recupera.html"><button
               style="background: #069cc2; border-radius: 6px; padding: 7.5px; cursor: pointer; color: #fff; border: none; font-size: 16px;">Não
               consegue conectar?</button></a>
-          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <p>Página de produtos</p>
+  <div id="divprodutos">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-3 mb-3 mb-lg-0">
+          <div class="card">
+            <img src="img/norm_12_dji-drone-mavic-3-fly-more-combo.jpg" class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Drone</a></p>
+                <p class="small text-danger"><s>R$ 8700</s></p>
+              </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Drone Max</h5>
+                <h5 class="text-dark mb-0">R$7524</h5>
+              </div>
 
-    ></script>
-  </body>
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">6</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+          <div class="card">
+            <img src="img/norm_1_dji-avata-proview-combo-dji-goggles-2.jpg" class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Drone</a></p>
+                <p class="small text-danger"><s>$7199</s></p>
+              </div>
+
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Drone Cam</h5>
+                <h5 class="text-dark mb-0">R$5999</h5>
+              </div>
+
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">7</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+          <div class="card">
+            <img src="img/norm_1_dji-drone-mini-2-fly-more-combo.jpg" class="card-img-top" alt="Gaming Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Drone</a></p>
+                <p class="small text-danger"><s>$1399</s></p>
+              </div>
+
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Drone Speed</h5>
+                <h5 class="text-dark mb-0">R$1299</h5>
+              </div>
+
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">5</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+          <div class="card">
+            <img src="img/norm_1_dji-drone-tello-boost-combo.jpg" class="card-img-top" alt="Gaming Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Drone</a></p>
+                <p class="small text-danger"><s>$1399</s></p>
+              </div>
+
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Drone marvel</h5>
+                <h5 class="text-dark mb-0">R$499</h5>
+              </div>
+
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">5</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+     
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

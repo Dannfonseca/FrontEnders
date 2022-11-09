@@ -24,6 +24,23 @@
   justify-content: center;
 }
 
+.todososcards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+#divprodutos {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 90%;
+  margin-top: 30px;
+  margin-left: 50px;
+  
+}
+
 #botaoproduto {
   display: flex;
   margin: auto;
@@ -36,8 +53,7 @@ h1 {
 #texto {
   width: 70%;
   height: 125px;
-
-  margin-top: 1px;
+  margin-top: 52px;
   align-items: flex-end;
   display: flex;
   margin-left: 230px;
@@ -258,4 +274,553 @@ footer a {
   #save-btn {
     width: 8em;
   }
+}
+
+
+.container01{
+  display: flex;
+  justify-content: center;
+}
+
+.card01{
+  width:300px ;
+  height: 500px;
+  border-radius:100px;
+  margin-top: 100px;
+  background-color: black
+}
+
+.imagen01{
+  display: flex;
+  justify-content:center;
+}
+
+.mar01{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.text-main01{
+ text-align: center;
+ color: #fff ;
+ font-weight: 600;
+ font-size: 25px;
+ font-family: 'Poppins', sans-serif;
+}
+.desc01 {
+   font-family: 'Poppins', sans-serif;
+   color: white;
+   font-weight: 300;
+   text-align: center;
+   font-size: 15px;
+
+}
+.btn01{
+   padding:0px 0px ;
+   font-family: 'Poppins', sans-serif;
+   font-size: 10px;
+   height: 60px;
+   font-weight: 500;
+   border-radius: 30rem;
+   border: none;
+   transition: 1s;
+   background-color: transparent;
+   cursor: pointer;
+
+
+}
+.btn:hover{
+   transition: 1s;
+}
+
+.button01 {
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+
+}
+.foto01{
+  width: 50px;
+  height:50px;
+} 
+.btn02{
+  padding:0px 0px ;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  height: 60px;
+  font-weight: 500;
+  border-radius: 30rem;
+  border: none;
+  transition: 1s;
+  background-color: transparent;
+  cursor: pointer;
+ 
+
+
+}
+.btn:hover{
+  transition: 1s;
+}
+
+.button02 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+.foto02{
+ width: 50px;
+ height:50px;
+}
+.container1{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.card1{
+  width:300px ;
+  height: 500px;
+  border-radius:100px;
+  margin-top: 100px;
+  background-color: black
+  
+}
+
+.imagen1{
+  display: flex;
+  justify-content:center;
+}
+
+.mar1{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.text-main1{
+ text-align: center;
+ color: #fff ;
+ font-weight: 600;
+ font-size: 25px;
+ font-family: 'Poppins', sans-serif;
+}
+.desc1 {
+   font-family: 'Poppins', sans-serif;
+   color: white;
+   font-weight: 300;
+   text-align: center;
+   font-size: 15px;
+
+}
+.btn2{
+   padding:0px 0px ;
+   font-family: 'Poppins', sans-serif;
+   font-size: 10px;
+   height: 60px;
+   font-weight: 500;
+   border-radius: 30rem;
+   border: none;
+   transition: 1s;
+   background-color: transparent;
+   cursor: pointer;
+
+
+}
+.btn:hover{
+   transition: 1s;
+}
+
+.button2 {
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+
+}
+.foto3{
+  width: 50px;
+  height:50px;
+} 
+.foto4{
+  width: 50px;
+  height:50px;
+} 
+.btn3{
+  padding:0px 0px ;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  height: 60px;
+  font-weight: 500;
+  border-radius: 30rem;
+  border: none;
+  transition: 1s;
+  background-color: transparent;
+  cursor: pointer;
+
+
+}
+.btn:hover{
+  transition: 1s;
+}
+
+.button4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+
+.container2{
+  display: flex;
+  justify-content: center;
+}
+
+.card2{
+  width:300px ;
+  height: 500px;
+  border-radius:100px;
+  margin-top: 100px;
+  background-color: black
+}
+
+.imagen2{
+  display: flex;
+  justify-content:center;
+}
+
+.mar2{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.text-main2{
+ text-align: center;
+ color: #fff ;
+ font-weight: 600;
+ font-size: 25px;
+ font-family: 'Poppins', sans-serif;
+}
+.desc2 {
+   font-family: 'Poppins', sans-serif;
+   color: white;
+   font-weight: 300;
+   text-align: center;
+   font-size: 15px;
+
+}
+.btn4{
+   padding:0px 0px ;
+   font-family: 'Poppins', sans-serif;
+   font-size: 10px;
+   height: 60px;
+   font-weight: 500;
+   border-radius: 30rem;
+   border: none;
+   transition: 1s;
+   background-color: transparent;
+   cursor: pointer;
+
+
+}
+.btn:hover{
+   transition: 1s;
+}
+
+.button4 {
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+
+}
+.foto5{
+  width: 50px;
+  height:50px;
+} 
+.foto6{
+  width: 50px;
+  height:50px;
+} 
+.btn5{
+  padding:0px 0px ;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  height: 60px;
+  font-weight: 500;
+  border-radius: 30rem;
+  border: none;
+  transition: 1s;
+  background-color: transparent;
+  cursor: pointer;
+
+
+}
+.btn:hover{
+  transition: 1s;
+}
+
+.button5 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+.foto5{
+ width: 50px;
+ height:50px;
+}
+.foto6{
+  width: 50px;
+  height:50px;
+}
+.btn6{
+  padding:0px 0px ;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  height: 60px;
+  font-weight: 500;
+  border-radius: 30rem;
+  border: none;
+  transition: 1s;
+  background-color: transparent;
+  cursor: pointer;
+
+
+}
+.btn:hover{
+  transition: 1s;
+}
+
+.button6 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+
+.container3{
+  display: flex;
+  justify-content:center; 
+}
+
+.card3{
+  width:300px ;
+  height: 500px;
+  border-radius:100px;
+  margin-top: 100px;
+  background-color: black;
+
+}
+
+.imagen3{
+  display: flex;
+  justify-content:center;
+}
+
+.mar3{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.text-main3{
+ text-align: center;
+ color: #fff ;
+ font-weight: 600;
+ font-size: 25px;
+ font-family: 'Poppins', sans-serif;
+}
+.desc3 {
+   font-family: 'Poppins', sans-serif;
+   color: white;
+   font-weight: 300;
+   text-align: center;
+   font-size: 15px;
+
+}
+.btn7{
+   padding:0px 0px ;
+   font-family: 'Poppins', sans-serif;
+   font-size: 10px;
+   height: 60px;
+   font-weight: 500;
+   border-radius: 30rem;
+   border: none;
+   transition: 1s;
+   background-color: transparent;
+   cursor: pointer;
+
+
+}
+.btn:hover{
+   transition: 1s;
+}
+
+.button6 {
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+
+}
+
+.btn7{
+  padding:0px 0px ;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  height: 60px;
+  font-weight: 500;
+  border-radius: 30rem;
+  border: none;
+  transition: 1s;
+  background-color: transparent;
+  cursor: pointer;
+
+
+}
+.btn:hover{
+  transition: 1s;
+}
+
+.button7 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+.foto7{
+ width: 50px;
+ height:50px;
+}
+.foto8{
+  width: 50px;
+  height:50px;
+}
+.btn8{
+  padding:0px 0px ;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  height: 60px;
+  font-weight: 500;
+  border-radius: 30rem;
+  border: none;
+  transition: 1s;
+  background-color: transparent;
+  cursor: pointer;
+
+
+}
+.btn:hover{
+  transition: 1s;
+}
+
+.button8 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+
+.container4{
+  display: flex;
+  justify-content:center; 
+}
+
+.card4{
+  width:300px ;
+  height: 500px;
+  border-radius:100px;
+  margin-top: 100px;
+  background-color: black;
+
+}
+
+.imagen4{
+  display: flex;
+  justify-content:center;
+}
+
+.mar4{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.text-main4{
+ text-align: center;
+ color: #fff ;
+ font-weight: 600;
+ font-size: 25px;
+ font-family: 'Poppins', sans-serif;
+}
+.desc4 {
+   font-family: 'Poppins', sans-serif;
+   color: white;
+   font-weight: 300;
+   text-align: center;
+   font-size: 15px;
+
+}
+.btn8{
+   padding:0px 0px ;
+   font-family: 'Poppins', sans-serif;
+   font-size: 10px;
+   height: 60px;
+   font-weight: 500;
+   border-radius: 30rem;
+   border: none;
+   transition: 1s;
+   background-color: transparent;
+   cursor: pointer;
+
+
+}
+.btn:hover{
+   transition: 1s;
+}
+
+.button8 {
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+
+}
+
+.btn9{
+  padding:0px 0px ;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  height: 60px;
+  font-weight: 500;
+  border-radius: 30rem;
+  border: none;
+  transition: 1s;
+  background-color: transparent;
+  cursor: pointer;
+
+
+}
+.btn:hover{
+  transition: 1s;
+}
+
+.button9 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+.foto9{
+ width: 50px;
+ height:50px;
+}
+.foto10{
+  width: 50px;
+  height:50px;
 }
